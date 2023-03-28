@@ -2,7 +2,7 @@
   "name": "mauri",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vakipandi.github.io/first-react",
+  "homepage": "http://vakipandi.github.io/First-React",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
