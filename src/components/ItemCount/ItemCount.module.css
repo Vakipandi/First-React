@@ -1,0 +1,35 @@
+.contBotones{
+    margin: 10px auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 205px;
+    text-align: center;    
+}
+
+.boton{    
+    font-weight: bolder;
+    padding: 3px 16px;
+    cursor: pointer;
+    background-color: rgb(100, 54, 28);
+    border-radius: 5px;
+    color: beige;
+}
+
+.boton:hover{
+    background-color: rgb(185, 148, 100);
+}
+
+.botonAdd{
+    margin:15px 0px ;
+    padding: 10px 45px 10px 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.botonAdd:hover{
+    background-color: chocolate;
+    color: antiquewhite;
+}

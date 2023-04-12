@@ -1,0 +1,25 @@
+.imgCarrito{
+    width: 30px;
+    
+}
+
+.botonCarrito{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 3px;
+    background-color: rgb(202, 127, 197);
+    margin:2vh 2vh 0 0;
+    border-radius: 75%;
+    cursor: pointer;
+}
+
+.botonCarrito:hover{
+    background-color: rgb(222, 159, 100);    
+}
+
+.contCarrito{
+    margin: 0px 5px;
+    font-weight: bolder;
+    color: rgb(210, 25, 25);
+}

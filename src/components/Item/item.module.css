@@ -1,0 +1,44 @@
+.cardItem{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgb(145, 41, 41);
+    border-radius: 15px;
+    margin: 2%;
+    background-color: antiquewhite;
+
+}
+
+.header{
+    margin: 10px auto ;
+}
+
+.itemHeader{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-weight: lighter;
+    color: rgb(75, 51, 33);
+}
+
+.itemImg{
+    width: 150px;
+    margin: 20px;
+    border-radius: 50%;
+}
+.info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+}
+.option{
+    margin: 25px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: beige;
+    border-radius: 25px;
+}
+
+.option:hover{
+    background-color: rgb(46, 89, 89);
+    color: azure;
+    border-color: blue;
+}
