@@ -10,11 +10,11 @@ function App() {
   return (
     <div className="App">
 
-      <BrowserRouter path='/First-React' element={<ItemListContainer greeting={"Bienvenidos"}/>}>
+      <BrowserRouter>
         <NavBar />
         <Routes>
 
-          <Route path='/' element={<ItemListContainer greeting={"Bienvenidos"}/>}/>
+          <Route path='/First-React' element={<ItemListContainer greeting={"Bienvenidos"}/>}/>
           <Route path='/category/:categoryId' element={<ItemListContainer />}/>
           <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
           <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
