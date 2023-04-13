@@ -11,6 +11,7 @@
 .Botones{
     padding: 20px,
     
+    
 }
 
 .Boton{
@@ -25,10 +26,21 @@
     font-weight: bold;
     text-decoration: none;
     color: rgb(72, 11, 11);
+    
 }
 
 .Boton:hover{
     background-color: bisque;
     font-weight: bold;
     color: rgb(89, 11, 11);
+}
+
+.logo{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(53, 37, 37);
+    font-weight: bolder;
+    padding: 10px;
+
+
 }

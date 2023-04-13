@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <>
         <nav className={styles.Navbar}>
-            <Link to='/'>
+            <Link to='/' className={styles.logo}>
                 <h3 >Cremaní</h3>
             </Link>
            
@@ -17,11 +17,7 @@ const NavBar = () => {
                 <NavLink to={'/category/miel'} className={ styles.Boton }>Endulzantes</NavLink>
                 <NavLink to={'/category/mermelada'} className={ styles.Boton }>Mermeladas</NavLink>
                 <NavLink to={'/category/stevia'} className={ styles.Boton }>Stevia</NavLink>
-                {/* <button className={styles.Boton}>Cremas</button>
-                <button className={styles.Boton}>Endulzantes</button>
-                <button className={styles.Boton}>Mermeladas</button>
-                <button className={styles.Boton}>Stevia</button> */}
-
+                
             </div>
             <CartWidget />
             

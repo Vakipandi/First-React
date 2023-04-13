@@ -30,11 +30,16 @@
     margin: 5px;
 }
 .option{
-    margin: 25px;
+    margin: 10px;
     padding: 10px;
     cursor: pointer;
     background-color: beige;
     border-radius: 25px;
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .option:hover{
