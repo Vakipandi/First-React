@@ -1,6 +1,10 @@
 .listGroup{
     margin: 10px auto;
-    display: flex-wrap;
-    width: 75%;
+    align-items: center;
+    width: 80%;
     justify-content: center ;
+    flex-direction: column;    
+
+   
 }
+

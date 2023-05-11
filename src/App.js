@@ -3,6 +3,7 @@ import './App.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
 
 
 
@@ -11,15 +12,17 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-
-          <Route path='/First-React' element={<ItemListContainer greeting={"Bienvenidos"}/>}/>
-          <Route path='/category/:categoryId' element={<ItemListContainer />}/>
-          <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
-          <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+        <CartProvider>
+          <NavBar />
+          <Routes>
           
-        </Routes>
+            <Route path='/First-React' element={<ItemListContainer greeting={"Bienvenidos"}/>}/>
+            <Route path='/category/:categoryId' element={<ItemListContainer />}/>
+            <Route path='/item/:itemId' element={<ItemDetailContainer />}/>
+            <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+            
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
       
     </div>

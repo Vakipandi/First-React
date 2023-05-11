@@ -1,4 +1,4 @@
-import CartWidget from "../CartWidget/CartWidget"
+import CartWidget from "./CartWidget/CartWidget"
 import React from "react"
 import styles from './navBar.module.css'
 import { NavLink , Link } from "react-router-dom"
@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <>
         <nav className={styles.Navbar}>
-            <Link to='/' className={styles.logo}>
+            <Link to='/First-React' className={styles.logo}>
                 <h3 >Cremaní</h3>
             </Link>
            

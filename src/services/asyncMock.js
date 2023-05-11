@@ -1,7 +1,7 @@
-import crema from './assets/products/crema.jpg'
-import miel from './assets/products/miel.jpg'
-import mermelada from './assets/products/mermelada.jpg'
-import stevia from './assets/products/stevia.jpg'
+import crema from '../assets/products/crema.jpg'
+import miel from '../assets/products/miel.jpg'
+import mermelada from '../assets/products/mermelada.jpg'
+import stevia from '../assets/products/stevia.jpg'
 
 const products = [
     {

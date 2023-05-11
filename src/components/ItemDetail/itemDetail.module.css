@@ -46,3 +46,17 @@
     color: azure;
     border-color: blue;
 }
+
+.boton{
+    margin:15px 0px ;
+    padding: 10px 45px 10px 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.boton:hover{
+    background-color: chocolate;
+    color: antiquewhite;
+}
