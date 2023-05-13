@@ -1,0 +1,13 @@
+.order{
+    text-align: center;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+.title{
+    text-align: center;
+    margin: 10px;
+}
+.container{
+    height: 100vh;
+}

@@ -2,13 +2,10 @@ import React, { useContext } from 'react'
 import styles from './cartItem.module.css'
 import { CartContext } from '../../../context/CartContext'
 
-const CartItem = ({id, name, img ,  price, qty}) => {
+const CartItem = ({id, name, img ,  price, quantity}) => {
     const {removeItem} = useContext(CartContext)
 
-    const total = price * qty;
-
-
-    
+   
 
   return (
     <div className={styles.cartItem}>
@@ -18,15 +15,15 @@ const CartItem = ({id, name, img ,  price, qty}) => {
                 {name}
             </h3>
             <p>
-                Cantidad :  {qty}
+                Cantidad :  {quantity}
             </p>
             <p>
                 Precio S/. {price}
             </p>
-            Subtotal :  S/. {total}
+                Subtotal :  S/. {price * quantity}
 
             <span>
-                <button onClick={() => removeItem(id)}>❌</button>
+                <button onClick={() => removeItem(id)} className={styles.cartItemDeleteBtn}>❌</button>
             </span>    
         </div>
     </div>

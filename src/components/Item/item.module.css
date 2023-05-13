@@ -1,3 +1,4 @@
+
 .cardItem{
     display: inline-block;
     justify-content: space-evenly;
@@ -7,7 +8,7 @@
     border-radius: 15px;
     margin: 2%;
     background-color: antiquewhite;
-
+    
 }
 
 .header{
@@ -36,10 +37,11 @@
     background-color: beige;
     border-radius: 25px;
     text-decoration: none;
-    color: blue;
+    color: rgb(25, 25, 199);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
 }
 
 .option:hover{

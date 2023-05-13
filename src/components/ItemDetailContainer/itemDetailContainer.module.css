@@ -5,3 +5,9 @@
     margin: 0px auto;
     height: 100vh;
 }
+
+.loading{
+    font-size: 30px;
+    text-align: center;
+    height: 100vh
+}

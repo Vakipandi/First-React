@@ -5,7 +5,7 @@ import styles from './item.module.css'
 const Item = ({category,id,name,img,price,stock}) => {
     return(
         <>
-            <article className={ styles.cardItem }>
+            <div className={ styles.cardItem }>
                 <header className={ styles.header }>
                     <h2 className={ styles.itemHeader }>
                         { name }        
@@ -25,7 +25,7 @@ const Item = ({category,id,name,img,price,stock}) => {
                 <footer>
                     <Link to={`/item/${id}`} className={ styles.option }>Ver detalle</Link>
                 </footer>
-            </article>
+            </div>
         </>
     );
 };

@@ -34,6 +34,14 @@ const ItemDetailContainer = () => {
    
     console.log(product)
     
+    if(loading){
+        return(
+            <div className={styles.loading}>
+                <h1>Cargando...</h1>
+            </div>
+        )
+    
+    }
 
     return(
         <div className={styles.itemDetailContiner}>

@@ -1,0 +1,20 @@
+.cartItem{
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.cartItemInfo{
+    display: inline-flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.cartItemImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.cartItemDeleteBtn{
+    cursor: pointer;
+}

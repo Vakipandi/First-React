@@ -10,16 +10,18 @@ export const CartProvider = ({ children }) => {
     console.log(cart);
 
     const addItem = (item, quantity) => {  
-        if(isInCart(item.id)){
+
+      const itemIndex = cart.findIndex((cartItem) => cartItem.id === item.id);
+
+        if(!isInCart(item.id)){
             setCart(prev => [...prev,  {...item, quantity}])
         } else {
             console.error('El producto ya fue agregado')
 
             let updatedCart = [...cart];
-            updatedCart.push({...item, quantity: quantity});
+            updatedCart[itemIndex].quantity += quantity;
             setCart(updatedCart);
-            console.log(updatedCart); 
-          }       
+             }       
     }
 
     const removeItem = (itemId) => {
@@ -37,15 +39,12 @@ export const CartProvider = ({ children }) => {
 
     const totalQuantity = () => {
       let quantity = 0;
-      cart.forEach(prod => {
-        quantity += prod.quantity;
+      cart.forEach((item) => quantity += item.quantity);
         return quantity;
-      })
-
     }
 
     const cartTotal = () => {
-      return cart.reduce((acc, prod) => acc + prod.price * prod.quantity, 0);
+      return cart.reduce((acc, prod) => acc += prod.price * prod.quantity, 0);
     }
 
 

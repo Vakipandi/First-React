@@ -36,6 +36,7 @@ const ItemListContainer = ({greeting}) => {
             
     },[categoryId])
 
+    if(loading) return <h1 className={styles.loading}>Cargando...</h1>
 
     return (
         <div className={styles.container}>

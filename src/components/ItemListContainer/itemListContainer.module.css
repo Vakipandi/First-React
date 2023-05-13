@@ -3,3 +3,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+
+.loading{
+    text-align: center;
+    font-size: 30px;
+    display: inherit;
+    height: 100vh
+}
