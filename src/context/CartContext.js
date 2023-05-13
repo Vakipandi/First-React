@@ -14,8 +14,12 @@ export const CartProvider = ({ children }) => {
             setCart(prev => [...prev,  {...item, quantity}])
         } else {
             console.error('El producto ya fue agregado')
-        }
-        
+
+            let updatedCart = [...cart];
+            updatedCart.push({...item, quantity: quantity});
+            setCart(updatedCart);
+            console.log(updatedCart); 
+          }       
     }
 
     const removeItem = (itemId) => {
@@ -31,8 +35,22 @@ export const CartProvider = ({ children }) => {
         return cart.some(prod => prod.id === itemId);
     }
 
+    const totalQuantity = () => {
+      let quantity = 0;
+      cart.forEach(prod => {
+        quantity += prod.quantity;
+        return quantity;
+      })
+
+    }
+
+    const cartTotal = () => {
+      return cart.reduce((acc, prod) => acc + prod.price * prod.quantity, 0);
+    }
+
+
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
+    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart , totalQuantity, cartTotal}}>
       {children}
     </CartContext.Provider>
   );
